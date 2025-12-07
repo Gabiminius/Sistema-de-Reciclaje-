@@ -1,0 +1,114 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam linestyle ortho
+hide circle
+
+class Usuario {
+  - UsuarioID: int
+  - Rut: String
+  - Nombre: String
+  - Correo: String
+}
+
+class Hogar {
+  - Dirección: String
+  - Longitud: float
+  - Latitud: float
+  + solicitarRecoleccion(listaMateriales): void
+  + recibirNotificacion(mensaje): void
+}
+
+class Reciclador {
+  - PatenteVehiculo: String
+  - CapacidadVehiculo: float
+  - LinkDocumentos: String
+  - EstadoReciclador: String
+  - DirecciónCooperativa: String
+  - Longitud: float
+  - Latitud: float
+  + getCapacidad(): float
+  + actualizarEstado(nuevoEstado): void
+  + generarComprobante(solicitudID): Comprobante
+}
+
+class Coordinador {
+  + revisarPropuesta(rutaID): void
+  + editarOrdenRuta(rutaID, nuevoOrden): void
+  + confirmarRuta(rutaID): void
+  + asignarConductor(rutaID): void
+}
+
+Usuario <|-- Hogar
+Usuario <|-- Reciclador
+Usuario <|-- Coordinador
+
+class ControladorSolicitud {
+  + crearSolicitud(hogarID, listaMateriales): void
+  + notificarExitoCreacion(hogarID): void
+}
+
+class ControladorRuta {
+  + agruparSolicitudes(zona): void
+  + generarPropuestaRuta(zona): RutaDeRecolección
+  + modificarOrden(rutaID, nuevoOrden): void
+  + calcularCargaRuta(rutaID): float
+  + buscarPorCapacidad(cargaTotal): List<Reciclador>
+  + notificarHorario(rutaID): void
+}
+
+class SolicitudDeRecolección {
+  - SolicitudID: int
+  - Fecha: Date
+  - Hora: Time
+  - Estado: String
+  + crear(fecha, hora, dir): void
+  + agregarDetalle(detalle): void
+  + calcularPesoSol(): float
+  + setEstado(nuevoEstado): void
+}
+
+class DetalleMaterial {
+  - Descripción: String
+  - PesoAprox: float
+  + crear(desc, peso): void
+  + getPesoAprox(): float
+}
+
+class RutaDeRecolección {
+  - RutaID: int
+  - Fecha: Date
+  - ListaDeRecolección: List
+  - EstadoRuta: String
+  + calcularPesoRuta(): float
+  + agregarSolicitud(sol): void
+  + setOrden(nuevoOrden): void
+}
+
+class Comprobante {
+  - SolicitudID: int
+  - FechaHoraEmisión: DateTime
+  - EstadoFinal: String
+  + emitirPDF(): void
+}
+
+Hogar ..> ControladorSolicitud : invoca >
+ControladorSolicitud ..> Hogar : notifica éxito >
+ControladorRuta ..> Hogar : notifica horario >
+
+ControladorSolicitud ..> SolicitudDeRecolección : crea >
+ControladorSolicitud ..> DetalleMaterial : crea >
+
+Coordinador ..> ControladorRuta : revisa/edita >
+ControladorRuta ..> RutaDeRecolección : gestiona/modifica >
+ControladorRuta ..> Reciclador : busca >
+
+SolicitudDeRecolección "1" *-- "1..*" DetalleMaterial : contiene >
+RutaDeRecolección "1" o-- "1..*" SolicitudDeRecolección : formada por >
+
+Hogar "1" --> "0..*" SolicitudDeRecolección : genera >
+Reciclador "1" --> "0..*" RutaDeRecolección : sigue >
+
+Reciclador "1" --> "0..*" Comprobante : genera >
+SolicitudDeRecolección "1" --> "0..1" Comprobante : resulta en >
+
+@enduml

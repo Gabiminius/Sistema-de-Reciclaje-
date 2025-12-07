@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.4">
+  <diagram name="Page-1" id="4FYhQniFyhV3IHjV5LgD">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value=":ControladorRuta" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="139.5" y="100" as="sourcePoint" />
+            <mxPoint x="139.5" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="AsignarConductor()" vertex="1">
+          <mxGeometry height="30" width="140" x="150" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" target="KtJQVqmOxEMhrjpicvbP-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="200" y="210" as="sourcePoint" />
+            <mxPoint x="387.5" y="211" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="r :Ruta" vertex="1">
+          <mxGeometry height="60" width="85" x="387.5" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value=":Coordinador" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="1. cargaDeRuta:= CalcularPesoRuta(RutaID)" vertex="1">
+          <mxGeometry height="30" width="200" x="190" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="s :Solicitud" vertex="1">
+          <mxGeometry height="60" width="90" x="385" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-9" edge="1" parent="1" source="KtJQVqmOxEMhrjpicvbP-5" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" target="KtJQVqmOxEMhrjpicvbP-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="390" as="sourcePoint" />
+            <mxPoint x="320" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="d :DetalleMaterial" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-11" edge="1" parent="1" source="KtJQVqmOxEMhrjpicvbP-8" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="430" y="500" as="sourcePoint" />
+            <mxPoint x="430" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="1.1 *[para cada] s:= siguiente()" vertex="1">
+          <mxGeometry height="30" width="170" x="472.5" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-13" edge="1" parent="1" source="KtJQVqmOxEMhrjpicvbP-5" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" target="KtJQVqmOxEMhrjpicvbP-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="530" y="240" as="sourcePoint" />
+            <mxPoint x="610" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value=":Solicitud" vertex="1">
+          <mxGeometry height="60" width="90" x="660" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="1.2 calcularPesoSol(SolicitudID)" vertex="1">
+          <mxGeometry height="30" width="180" x="440" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value=":detalleMaterial" vertex="1">
+          <mxGeometry height="60" width="110" x="690" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-17" edge="1" parent="1" source="KtJQVqmOxEMhrjpicvbP-8" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="KtJQVqmOxEMhrjpicvbP-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="390" as="sourcePoint" />
+            <mxPoint x="540" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="1.2.1 *[para cada] d:=siguiente()" vertex="1">
+          <mxGeometry height="30" width="220" x="472.5" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-21" edge="1" parent="1" source="KtJQVqmOxEMhrjpicvbP-1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;" target="KtJQVqmOxEMhrjpicvbP-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160" y="360" as="sourcePoint" />
+            <mxPoint x="160" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtJQVqmOxEMhrjpicvbP-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Lista: Reciclador" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="b32Cox-_gTObSuUjzf60-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="1.2.2 p:=pesoAprox()" vertex="1">
+          <mxGeometry height="30" width="150" x="430" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="b32Cox-_gTObSuUjzf60-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="2. candidatos:= buscarPorCapacidad(cargaDeRuta)" vertex="1">
+          <mxGeometry height="30" width="160" x="180" y="310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

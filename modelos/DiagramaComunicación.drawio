@@ -1,0 +1,51 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.3">
+  <diagram name="Page-1" id="HmjMa6lVSm3GsK3fvqIu">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-3" edge="1" parent="1" source="5umPRxmVqfRO6ZUpNFBD-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-9" edge="1" parent="1" source="5umPRxmVqfRO6ZUpNFBD-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="5umPRxmVqfRO6ZUpNFBD-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" value=":InterfazHogar" vertex="1">
+          <mxGeometry height="40" width="130" x="30" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;IngresarUsuario&lt;/div&gt;&lt;div&gt;(Usuario, Contraseña)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="15" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-11" edge="1" parent="1" source="5umPRxmVqfRO6ZUpNFBD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="5umPRxmVqfRO6ZUpNFBD-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-13" edge="1" parent="1" source="5umPRxmVqfRO6ZUpNFBD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5umPRxmVqfRO6ZUpNFBD-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" value=":ControladorSolicitud" vertex="1">
+          <mxGeometry height="40" width="150" x="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;b&gt;nuevoDetalle&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;:DetalleMaterial&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="680" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" value="&lt;div&gt;nuevaSolicitud&lt;/div&gt;&lt;div&gt;:SolicitudDeRecoleccion&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="350" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1.1 crear(fecha,hora,dirección)" vertex="1">
+          <mxGeometry height="30" width="60" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;1.2*: [ i = 1...n]&lt;/div&gt;&lt;div&gt;crearDet(descrip,pesoAprox)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="510" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5umPRxmVqfRO6ZUpNFBD-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;1.3* : [ i = 1...n]&lt;/div&gt;&lt;div&gt;agregarDetalle(nuevoDetalle)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="400" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="cfoGkd1dMK6rEpRuq02c-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1: [Nueva solicitud] crearSol(dir, hora, fecha, listaMateriales)" vertex="1">
+          <mxGeometry height="30" width="230" x="140" y="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
