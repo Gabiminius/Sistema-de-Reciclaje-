@@ -1,24 +1,40 @@
 # Sistema de Reciclaje
 Entrega final para el curso de Ingeniería de Software 
+
+## Compilar los archivos
+
+```bash
+javac SistemaReciclaje.java SistemaReciclajeGUI.java
+```
+```bash
+java SistemaReciclajeGUI
+```
+El archivo `SistemaReciclaje.java` incluye un método `main` de ejemplo dentro de la clase `SistemaReciclaje`, por si se desea probar el sistema de forma independiente sin utilizar la interfaz gráfica.
+
+
 # Diagramas del Proyecto
 
 Este repositorio contiene los distintos diagramas utilizados en el desarrollo del proyecto.  
-A continuación se presentan las imágenes incluidas, organizadas para una visualización clara dentro de GitHub.
+A continuación se presentan las imágenes incluidas:
 
 ---
 
 ## Diagrama de Comunicación
 
-### Versión 1
+### 1
 ![Diagrama de Comunicación](./Diagramas(png)/Diagramadecomunicacion.png)
 
-### Versión 2
+### 2
 ![Diagrama de Comunicación 2](./Diagramas(png)/Diagramadecomunicacion2.png)
 
 ---
-
-## Actualizar Ruta
+## Diagramas de Secuencia
+### Actualizar Ruta
 ![Actualizar Ruta](./Diagramas(png)/actualizarruta.png)
+
+---
+### Ingresar Solicitud
+![Ingresar Solicitud](./Diagramas(png)/ingresarsol.png)
 
 ---
 
@@ -29,11 +45,6 @@ A continuación se presentan las imágenes incluidas, organizadas para una visua
 
 ## Esquema Conceptual
 ![Esquema Conceptual](./Diagramas(png)/esquemaconceptual.png)
-
----
-
-## Ingresar Solicitud
-![Ingresar Solicitud](./Diagramas(png)/ingresarsol.png)
 
 ---
 
