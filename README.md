@@ -49,7 +49,7 @@ A continuación se presentan las imágenes incluidas:
 ---
 
 ## Diagrama UML
-![Diagrama UML](./Diagramas(png)/uml.png)
+![Diagrama UML](./Diagramas(png)/uml2.png)
 
 ---
 
