@@ -495,9 +495,6 @@ class SistemaReciclaje {
         System.out.println("Total de solicitudes: " + controladorSol.getSolicitudes().size());
         System.out.println("Total de rutas: " + controladorRuta.getRutas().size());
         System.out.println("Rutas asignadas a " + reciclador1.getNombre() );
-    }
-}
-        Comprobante comprobante = reciclador.generarComprobante(solicitud.getSolicitudID());
-        comprobante.emitirPDF();
+       
     }
 }
