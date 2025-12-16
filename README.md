@@ -4,12 +4,12 @@ Entrega final para el curso de Ingeniería de Software
 ## Compilar los archivos
 
 ```bash
-javac SistemaReciclaje.java GUIReciclaje.java
+javac sistema_reciclaje.java SistemaReciclajeGUI.java
 ```
 ```bash
-java GUIReciclaje
+java SistemaReciclajeGUI
 ```
-El archivo `SistemaReciclaje.java` incluye un método `main` de ejemplo dentro de la clase `SistemaReciclaje`, por si se desea probar el sistema de forma independiente sin utilizar la interfaz gráfica.
+El archivo `sistema_reciclaje.java` incluye un método `main` de ejemplo dentro de la clase `SistemaReciclaje`, por si se desea probar el sistema de forma independiente sin utilizar la interfaz gráfica.
 
 
 # Diagramas del Proyecto
